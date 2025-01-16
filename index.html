@@ -1,55 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
-        <meta http-equiv= "content-type" content = "text/html; charset = utf-8">
-        <meta http-equiv= "X-UA-Compatible" content ="IE = edge">
-        <meta property = "og:title" content = "Krishna Priya Nimmagadda">
-        <meta property = "og:description" content = "Cybersecurity student">
-        <meta property = "og:type" content = "website">
-        <meta property = "og:url" content = "https://krishnapriya-n.github.io">
-        <meta name = "description" content = "Cybsersecurity Student">
-        <meta name = "keywords" content = "Krishna Priya, Hacking, Nezukooooooooo, nezukooooooooo, engineer, developer, cyber, Cybersecurity">
-        <base href = "https://krishnapriya-n.github.io">
-        <title>Krishna Priya Nimmagadda - Cyber Student</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <style>
-        body {background-color: #e2d2e2fe;}
-        body {text-align: center;}
-    </style>
-    <body>
-        <div class = "wrap"> 
-            <section class = "profile">
-                <div class = "portrait">
-                    <div class = "img" style = "background-image: url('https://github.com/krishnapriya-n/krishnapriya-n.github.io/blob/main/IMG_3702.jpg')"> </div>
-                </div>
-                <h1 class = "name" style = "font-size: 48px;">Krishna Priya Nimmagadda</h1>
-                <h2 class= "title">Studying Bachelor of Engineering with Cybersecurity major at 
-                    <a href = "https://wgtn.ac.nz/" rel = "nofollow"> Victoria University of Wellington</a>, New Zealand</h2> 
-                <span class = "about">
-                    <p> I am interested in Cybersecurity and capture the flags. </p>
-                    <p> Currently looking to work as an intern in Cybersecurity field.</p>
-                    <p> My interests include coding games on python and learning other languages.</p>
-                </span> 
-            </section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio - Open World Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Welcome to My Interactive Portfolio!</h1>
+        <p>Explore the world, collect orbs, and discover more about me, my projects, and my certifications.</p>
+        <button id="start-game-btn">Let's Begin the Journey!</button>
+        
+        <div id="game-screen" class="hidden">
+            <div id="instructions">
+                <p>Use WASD keys to move. Press F to collect orbs!</p>
+                <p>Click on orbs to visit different sections.</p>
+            </div>
 
-            <section class = "contact">
-                <a class = "contact" href = "https://www.linkedin.com/in/krishna-priya-nimmagadda-637354257/">
-                    <i class = "fa fa-linkedin-square" style = "font-size:48px" aria-hidden = "true"></i>
-                </a>
-                <a class = "contact" href = "https://github.com/krishnapriya-n">
-                    <i class = "fa fa-github" style = "font-size:48px" aria-hidden = "true"></i>
-                </a>
-                <a class = "contact" href = "https://www.instagram.com/krishna_priya_n/">
-                    <i class = "fa fa-instagram" style = "font-size:48px" aria-hidden = "true"></i>
-                </a>
-            </section>
+            <!-- 3D World Container -->
+            <div id="world-container"></div>
+
+            <!-- Options to explore different sections -->
+            <div id="exploration-options" class="hidden">
+                <button onclick="startExplore('about')">Explore About Me</button>
+                <button onclick="startExplore('projects')">Explore Projects</button>
+                <button onclick="startExplore('certs')">Explore Certifications</button>
+            </div>
         </div>
-    </body>
-    <footer class = "footer">
-        <p> This website is created for self learning purposes. View the project code and other details at <a href = "https://github.com/krishnapriya-n/krishnapriya-n.github.io">Github</a>.</p>
-    </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
 </html>
